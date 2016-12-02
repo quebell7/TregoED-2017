@@ -14,7 +14,9 @@ html {
 
 body {
 	font-family: "Open Sans", "Arial", sans-serif;
+  padding-top: 10px;
 }
+
 
 .container {
 /*	border: 1px solid green;*/
@@ -42,8 +44,12 @@ i {
 }
 
 
-
-
+/*@media screen and (min-width: 769px) {
+  header {
+    position: fixed;
+  }
+}
+*/
 
 /***** Header & Nav *****/
 
@@ -113,7 +119,11 @@ i {
 	letter-spacing: .0675em;
 	text-transform: uppercase;
 	font-weight: 800;
-	margin: 0 40px;
+	margin-right: 65px;
+}
+
+.nav-type.last-item{
+  margin-right: 0px;
 }
 
 .line {
@@ -145,6 +155,10 @@ i {
 }
 */
 
+.mobile-subnav {
+  display: none;
+}
+
 /***** Header & Nav *****/
 
 /* Dropdown Button */
@@ -165,7 +179,7 @@ i {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-/*    display: none;*/
+    display: none;
     position: absolute;
     background-color: #f9f9f9;
     width: 1230px;
@@ -230,7 +244,7 @@ i {
 }
 
 .subnav-graphic {
-  border-right: 1px solid #999;
+  border-right: 1px solid #e0dfdf;
   min-width: 172px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -263,8 +277,9 @@ i {
 .is-large {
 	width:100%;
 	max-width: 2400px;
-    background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) ), url('../images/sewanhaka1.jpg');
-    background-position:center top;
+  background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) ), url('../images/sewanhaka1.jpg');
+  background-position:center top;
+  background-size: cover;
 }
 
 
@@ -353,16 +368,89 @@ h1 {
 
 /***** Smaller Browser Windows *****/
 
+@media screen and (max-width: 1250px) {
+  .dropdown-content {
+    /* display: none; */
+/*    position: absolute;*/
+    width: 1050px;
+  }
 
-@media screen and (max-width: 1175px) {
+    .subnav-graphic {
+    padding-right: 15px;
+    padding-left: 15px;
 
+  }
 }
 
-@media screen and (max-width: 1000px) {
+
+
+@media screen and (max-width: 1050px) {
+  .nav-type {
+    margin-right: 25px;
+  }
+
+   .dropdown-content {
+    /* display: none; */
+/*    position: absolute;*/
+    width: 920px;
+  }
+
+    .subnav-graphic {
+    padding-right: 10px;
+    padding-left: 10px;
+
+  }
+
+  .four-process-type {
+    font-size: 1.15em;
+  }
+
+  .icon.is-subnav {
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  .subnav-circle {
+    min-height: 35px;
+    min-width: 35px;
+  }
+
+  .purpose {
+    font-size: 10.5px;
+  }
 
 }
 
 @media screen and (max-width: 900px) {
+    .nav-type {
+      font-size: 14px;
+  }
+
+     .dropdown-content {
+    /* display: none; */
+/*    position: absolute;*/
+    width: 810px;
+  }
+
+
+  .four-process-type {
+    font-size: 1em;
+  }
+
+  .icon.is-subnav {
+    font-size: 18px;
+  }
+
+  .subnav-circle {
+    min-height: 35px;
+    min-width: 35px;
+  }
+
+  .purpose {
+    font-size: 9.5px;
+  }
+
+
 
 }
 
@@ -377,6 +465,13 @@ h1 {
 /***** Mobile Devices - iPad*****/
 
 @media only screen and (max-width: 768px) {
+  .submenu, .dropdown-content  {
+    display: none;
+  }
+
+  .mobile-subnav {
+  display: block;
+}
 
 }
 
