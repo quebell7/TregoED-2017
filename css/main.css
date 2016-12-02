@@ -48,10 +48,6 @@ i {
 /***** Header & Nav *****/
 
 
-header {
-	border: 1px solid blue;
-}
-
 .nav{
 	min-height: 55px
 }
