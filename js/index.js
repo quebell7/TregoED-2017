@@ -2,32 +2,32 @@ $(document).ready(pageReady);
 
 function pageReady() {
 
-// 	$(".dropbtn").hover(function showRollover() {
-// 		 event.preventDefault();
-//     $(this).addClass("dropdown-content");
-//     // $(this).show("thickline");
+	$(".dropbtn").hover(function showRollover() {
+		 event.preventDefault();
+    $(this).addClass("dropdown-content");
+    // $(this).show("thickline");
 
-//  }, function removeRollover() {
-//  		 event.preventDefault();
-//     $(this).removeClass("rollover");
-// } );
+ }, function removeRollover() {
+ 		 event.preventDefault();
+    $(this).removeClass("rollover");
+} );
 
-// 		// Set up click listener on mobile nav button
-// 	$(".nav-toggle").click(toggleMobileNav);
+		// Set up click listener on mobile nav button
+	$(".nav-toggle").click(toggleMobileNav);
 
-// 	function toggleMobileNav() {
+	function toggleMobileNav() {
 
-// 		// Toggle sliding the mobile nav container to reveal/hide
-// 		$(".nav-menu").slideToggle();
+		// Toggle sliding the mobile nav container to reveal/hide
+		$(".nav-menu").slideToggle();
 
-// 		// Toggle applying class to the hamburger lines to trigger animation
-// 		// $(".line").toggleClass("active");
-// 		$(".circle").toggle();
-// 		    if ($(window).width() > 768) {
-//       	$(".icon").toggle();
-//     	}
-// 	}
-// }
+		// Toggle applying class to the hamburger lines to trigger animation
+		// $(".line").toggleClass("active");
+		$(".circle").toggle();
+		    if ($(window).width() > 768) {
+      	$(".icon").toggle();
+    	}
+	}
+}
 	
 
 ///nav links
