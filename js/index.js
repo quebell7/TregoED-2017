@@ -4,7 +4,7 @@ function pageReady() {
 
 	$(".dropbtn").hover(function showRollover() {
 		 event.preventDefault();
-    $(this).addClass("dropdown-content");
+    // $(this).addClass("dropdown-content");
     // $(this).show("thickline");
 
  }, function removeRollover() {
@@ -27,8 +27,21 @@ function pageReady() {
       	$(".icon").toggle();
     	}
 	}
+
+	$(window).resize(windowResize);
+
+	function windowResize() {
+		if ($(window).width() > 768) {
+			$(".nav-menu").show();
+			$(".nav-menu").css("display", "flex");
+		} else{
+			$(".nav-menu").css("display", "block");
+			$(".nav-menu").hide();
+		}
+	}
 }
 	
+
 
 ///nav links
 

@@ -1,0 +1,33 @@
+.dropdown-content {
+    /* display: none; */
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 1280px;
+    min-width: 160px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+
+
+    .is-large {
+    width: 100%;
+    max-width: 2400px;
+    background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) ), url(../images/sewanhaka1.jpg);
+    background-position: center top;
+    background-size: cover;
+
+    div layer on top of hero image that only turns on in mobile
+
+    flexbox flexorder for black box
+
+
+put social links in a hidden div inside main nav on mobile and show them in desktop.
+
+apply position fixed on the header AND add padding to the very top of the body tag. 
+
+add motion by increased padding in hover state
+
+jquery code pen for transitioning hero images...set interval timed loop and swap out background images
