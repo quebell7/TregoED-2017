@@ -35,13 +35,27 @@ body {
 	color: white;
 }
 
+.white-background {
+  background-color: white;
+}
+
 .black {
   color: black;
+}
+
+.black-bck {
+  background-color: #eeeded;
 }
 
 i {
   font-weight: 400;
 }
+
+.lgt-grey {
+  color: #b2b1b1;
+}
+
+
 
 
 /*@media screen and (min-width: 769px) {
@@ -97,8 +111,11 @@ i {
     border-radius: 60%;
     min-height: 45px;
     min-width: 45px;
-    background-color:  #8b0170;
     border: none;
+}
+
+.subnav-circle.purple-circle {
+    background-color:  #8b0170;
 }
 
 .subnav-circle.green-circle {
@@ -162,6 +179,12 @@ i {
 /***** Header & Nav *****/
 
 /* Dropdown Button */
+
+/*button {
+  background-color: white;
+}*/
+
+
 .dropbtn {
     padding: 16px;
     font-size: 16px;
@@ -326,7 +349,7 @@ h1 {
 
 
 /* Mobile nav button container */
-.mobile-nav-button {
+/*.mobile-nav-button {
     margin-top: -28px;
     margin-right: 15px;
     float: right;
@@ -334,23 +357,23 @@ h1 {
     cursor: pointer;
     height: 29px;
     display: none; 
-}
+}*/
 
 /* creates a line for the hamburger nav */
-.line {
+/*.line {
 	height:3px;
 	width:65%;
 	margin:5px auto;
 	border-radius:5px;
 	background: #fff;
 	border: none;
-	transition: .25s transform; /* transitions the transform properties */
-}
+	transition: .25s transform;*/ /* transitions the transform properties */
+/*}*/
 
 
-.line.active.top {
+/*.line.active.top {
 	background: #faaf4c;
-}
+}*/
 
 .line.active.middle {
 	/* Rotates the line by 45deg */
@@ -465,12 +488,66 @@ h1 {
 /***** Mobile Devices - iPad*****/
 
 @media only screen and (max-width: 768px) {
-  .submenu, .dropdown-content  {
+  .submenu, /*.dropdown,*/ .dropdown-content  {
     display: none;
   }
 
   .mobile-subnav {
   display: block;
+  }
+
+  .icon.is-medium {
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  .circle {
+    min-height: 25px;
+    min-width: 25px;
+  }
+
+
+  .tregoed-padding {
+    padding-top: 0px;
+    padding-bottom: 3px;
+    padding-right: 16px;
+    padding-left: 20px;
+  }
+
+  .nav-type {
+    margin-right: 0;
+}
+
+  .nav {
+    min-height: 42px;
+    padding-right: 10px;
+  }
+
+  .nav-center {
+    padding-top: 10px;
+  }
+
+  .nav-toggle {
+    height: 42px;
+  }
+
+  .subnav-circle {
+    background-color: black;
+  }
+
+  .subnav-padding {
+    padding-left: 7px;
+  }
+
+  .hide {
+  display: none;
+}
+
+  .nav-menu .nav-item {
+    border-top: 1px solid rgba(219, 219, 219, 0.5);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
 }
 
 }
@@ -498,8 +575,34 @@ h1 {
 
 /***** iPhone 5  *****/
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 490px) {
+  .nav {
+    min-height: 37px;
+  }
 
+  .nav-toggle {
+    height: 37px;
+  }
+
+  .nav-left {
+    overflow-x: hidden;
+  }
+
+.icon.is-medium {
+  font-size: 13px;
+  height: 28px;
+  width: 28px;
+  line-height: 24px;
+}
+
+  .is-brand {
+    width: 60%;
+    min-width: 125px;
+  }
+
+  a.nav-item {
+    padding: 6px;
+  }
 }
 
 

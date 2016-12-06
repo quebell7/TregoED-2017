@@ -21,8 +21,8 @@ function pageReady() {
 		$(".nav-menu").slideToggle();
 
 		// Toggle applying class to the hamburger lines to trigger animation
-		// $(".line").toggleClass("active");
-		$(".circle").toggle();
+
+		// $(".circle").toggle();
 		    if ($(window).width() > 768) {
       	$(".icon").toggle();
     	}
