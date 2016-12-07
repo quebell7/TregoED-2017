@@ -17,6 +17,11 @@ body {
   padding-top: 10px;
 }
 
+header {
+    -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 
 .container {
 /*	border: 1px solid green;*/
@@ -294,6 +299,7 @@ i {
 
 .hero {
 	margin: 0 auto;
+  padding-top: 80px;
 }
 
 
@@ -488,6 +494,8 @@ h1 {
 /***** Mobile Devices - iPad*****/
 
 @media only screen and (max-width: 768px) {
+
+
   .submenu, /*.dropdown,*/ .dropdown-content  {
     display: none;
   }
