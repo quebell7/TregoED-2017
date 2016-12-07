@@ -1169,7 +1169,7 @@ a.box:active {
   color: #363636;
   font-weight: 300;
   line-height: 1.125;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .content h1:not(:first-child),
