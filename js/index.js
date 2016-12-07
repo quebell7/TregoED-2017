@@ -3,10 +3,9 @@ var heroIndex = 0;
 
 // The array of strings corresponding to the source location of your images; you can also use URLs pointing to your project here too
 var heroImages = [
-  'http://manninghamvet.com.au/sites/default/files/styles/large/public/images/article/cats.jpg',
-  'https://static1.squarespace.com/static/50c8c55be4b0a1d4330d16f8/t/5577357ae4b000535469c1c1/1401647944177/Black-White-Cat-Kitten-Wallpaper-Desktop.jpg',
-  'http://www.catprotection.com.au/wp-content/uploads/2014/11/5507692-cat-m.jpg',
-  'https://www.petfinder.com/wp-content/uploads/2013/03/101888324-632x353-flipped.jpg'
+  'https://quebell7.github.io/TregoED-2017/images/sewanhaka1.jpg',
+  'https://quebell7.github.io/TregoED-2017/images/sewanhaka2.jpg',
+  'https://quebell7.github.io/TregoED-2017/images/sewanhaka3.jpg',
 ];
 
 $(document).ready(pageReady);
