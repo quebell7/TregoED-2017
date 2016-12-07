@@ -277,7 +277,7 @@ i {
   background-position:center top;
   background-size: cover;
 /* animation effect */
-  transition: .5s background ease-in-out;
+  transition: 1s background ease-in-out;
   width: 100%;
   height: 500px;
 }
