@@ -25,7 +25,8 @@ function updateHeroIndex() {
 function updateHero() {
   var heroSource = heroImages[heroIndex];
   var backgroundUrl = 'url(' + heroSource + ')';
-  $('.hero').css('background-image', ".is-large", backgroundUrl);
+  $('.hero').css('background-image', backgroundUrl);
+  $('.is-large').show();
   updateHeroIndex();
 }
 
