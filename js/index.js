@@ -36,7 +36,7 @@ function pageReady() {
   // This is how to repeatedly call the updateHero function on a timer
   // This will call our updateHero() function every 1000 milliseconds (1 second)
   setInterval(updateHero, 5000);
-}
+
 
     $(".dropbtn").hover(function showRollover() {
          event.preventDefault();
@@ -75,8 +75,9 @@ function pageReady() {
             $(".nav-menu").hide();
         }
     }
+}
 
-    
+
 
 	
 

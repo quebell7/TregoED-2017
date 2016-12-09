@@ -55,9 +55,19 @@ i {
   font-weight: 400;
 }
 
+strong {
+  font-weight: 700;
+}
+
+li {
+  padding-top: 6px;
+}
+
 .lgt-grey {
   color: #b2b1b1;
 }
+
+
 
 
 /***** Header & Nav *****/
@@ -285,11 +295,9 @@ i {
   width:100%;
   opacity: 0.3;
     max-height: 500px;
+/*    z-index: 1;
+      position: relative;*/
 /*  position:relative;*/
-}
-
-.on-top {
-    z-index: 5;
 }
 
 
@@ -298,6 +306,8 @@ i {
 	max-width: 2400px;
 /*  background-position:center, top;*/
   background-size: cover;
+/*        position: relative;
+  z-index: 100;*/
 }
 
 /*.is-hero-height {
@@ -317,6 +327,8 @@ h1 {
 	letter-spacing: 1.9px;
 	text-shadow: 2px 2px #3d3b3b;
   margin-top: 60px;
+  position: relative;
+  z-index: 3;
 
 }
 
@@ -337,7 +349,62 @@ h1 {
   text-align: center;
 }
 
+/* black square */
+
+.black-square {
+  display: flex;
+  position: absolute;
+/*  z-index: 4;*/
+}
+
+.box {
+  width: 100px;
+  height: 300px;
+  background-color: black;
+}
+
+.notification {
+    background-color: black;
+    border-radius: 0px;
+    margin-right: 5%;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 5px;
+    padding-right: 30px;
+    position: relative;
+    margin-top: -100px;
+/*    z-index: 2;*/
+}
+
+h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.125em; 
+  color: #e0612b; 
+}
+
+h5.is-sub-head {
+  padding-bottom: 10px;
+}
+
+.black-box-type {
+  font-family: "Kreon", serif;
+  font-weight: 400;
+  font-size: 1.15em;
+  color: #c2c2c2;
+  letter-spacing: .5px;
+  margin-left: 20px;
+}
+
+
+
+
+
+
 @media screen and (min-width: 769px) {
+
 
 }
 
@@ -556,6 +623,11 @@ h1 {
     padding-bottom: 8px;
     padding-left: 15px;
 }
+
+  .notification {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
 
 }
 
