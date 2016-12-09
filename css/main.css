@@ -282,7 +282,7 @@ i {
 .is-large {
 	width:100%;
 	max-width: 2400px;
-  background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) ), url('../images/sewanhaka5.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) );
   background-position:center, top;
   background-size: cover;
 }
