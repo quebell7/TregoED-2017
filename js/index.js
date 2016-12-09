@@ -1,47 +1,81 @@
+// Initial the heroIndex to 0
+var heroIndex = 0;
 
+// The array of strings corresponding to the source location of your images; you can also use URLs pointing to your project here too
+var heroImages = [
+  'https://quebell7.github.io/TregoED-2017/images/sewanhaka1.jpg',
+  'https://quebell7.github.io/TregoED-2017/images/sewanhaka2.jpg',
+  'https://quebell7.github.io/TregoED-2017/images/sewanhaka3.jpg',
+  'https://quebell7.github.io/TregoED-2017/images/sewanhaka4.jpg',
+  'https://quebell7.github.io/TregoED-2017/images/sewanhaka5.jpg',
+  'https://quebell7.github.io/TregoED-2017/images/sewanhaka6.jpg'
+];
 
 $(document).ready(pageReady);
 
+// This updates the index 
+function updateHeroIndex() {
+  heroIndex++;
+
+  // A bit of conditional logic to reset to 0
+  if (heroIndex >= heroImages.length) heroIndex = 0;
+}
+
+// This function handles the updating of the hero using the array of source strings we defined at the top and the heroIndex
+function updateHero() {
+  var heroSource = heroImages[heroIndex];
+  var backgroundUrl = 'url(' + heroSource + ')';
+  $('.hero').css('background-image', backgroundUrl);
+  updateHeroIndex();
+}
+
 function pageReady() {
 
-	$(".dropbtn").hover(function showRollover() {
-		 event.preventDefault();
+     updateHero();
+  
+  // This is how to repeatedly call the updateHero function on a timer
+  // This will call our updateHero() function every 1000 milliseconds (1 second)
+  setInterval(updateHero, 5000);
+}
+
+    $(".dropbtn").hover(function showRollover() {
+         event.preventDefault();
     // $(this).addClass("dropdown-content");
     // $(this).show("thickline");
 
  }, function removeRollover() {
- 		 event.preventDefault();
+         event.preventDefault();
     $(this).removeClass("rollover");
 } );
 
-		// Set up click listener on mobile nav button
-	$(".nav-toggle").click(toggleMobileNav);
+        // Set up click listener on mobile nav button
+    $(".nav-toggle").click(toggleMobileNav);
 
-	function toggleMobileNav() {
+    function toggleMobileNav() {
 
-		// Toggle sliding the mobile nav container to reveal/hide
-		$(".nav-menu").slideToggle();
+        // Toggle sliding the mobile nav container to reveal/hide
+        $(".nav-menu").slideToggle();
 
-		// Toggle applying class to the hamburger lines to trigger animation
+        // Toggle applying class to the hamburger lines to trigger animation
 
-		// $(".circle").toggle();
-		    if ($(window).width() > 768) {
-      	$(".icon").toggle();
-    	}
-	}
+        // $(".circle").toggle();
+            if ($(window).width() > 768) {
+        $(".icon").toggle();
+        }
+    }
 
-	$(window).resize(windowResize);
+    $(window).resize(windowResize);
 
-	function windowResize() {
-		if ($(window).width() > 768) {
-			$(".nav-menu").show();
-			$(".nav-menu").css("display", "flex");
-		} else{
-			$(".nav-menu").css("display", "block");
-			$(".nav-menu").hide();
-		}
-	}
-}
+    function windowResize() {
+        if ($(window).width() > 768) {
+            $(".nav-menu").show();
+            $(".nav-menu").css("display", "flex");
+        } else{
+            $(".nav-menu").css("display", "block");
+            $(".nav-menu").hide();
+        }
+    }
+
 	
 
 

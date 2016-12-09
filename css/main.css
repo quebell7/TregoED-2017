@@ -282,13 +282,13 @@ i {
 .is-large {
 	width:100%;
 	max-width: 2400px;
-  background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) ), url('../images/sewanhaka3.jpg');
-  background-position:center top;
+  background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) ), url('../images/sewanhaka5.jpg');
+  background-position:center, top;
   background-size: cover;
 }
 
 .is-hero-height {
-  max-height: 450px;
+  max-height: 500px;
   min-height: 250px;
 }
 
