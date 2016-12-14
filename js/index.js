@@ -4,11 +4,12 @@ var heroIndex = 0;
 // The array of strings corresponding to the source location of your images; you can also use URLs pointing to your project here too
 var heroImages = [
   'https://quebell7.github.io/TregoED-2017/images/sewanhaka1.jpg',
+  'https://quebell7.github.io/TregoED-2017/images/sewanhaka9.jpg',
+  'https://quebell7.github.io/TregoED-2017/images/sewanhaka7.jpg',
   'https://quebell7.github.io/TregoED-2017/images/sewanhaka2.jpg',
   'https://quebell7.github.io/TregoED-2017/images/sewanhaka3.jpg',
   'https://quebell7.github.io/TregoED-2017/images/sewanhaka4.jpg',
-  'https://quebell7.github.io/TregoED-2017/images/sewanhaka5.jpg',
-  'https://quebell7.github.io/TregoED-2017/images/sewanhaka6.jpg'
+  'https://quebell7.github.io/TregoED-2017/images/sewanhaka6.jpg',
 ];
 
 $(document).ready(pageReady);
