@@ -398,6 +398,12 @@ h1 {
 
 /* black square */
 
+
+/*.column.is-offset-8, .column.is-offset-8-tablet {
+  margin-left: 64.66667%;
+}*/
+
+
 .black-square {
   display: flex;
   position: absolute;
@@ -420,8 +426,10 @@ h1 {
     padding-right: 30px;
     position: relative;
     margin-top: -100px;
+    z-index: 0;
 
 }
+
 
 .twenty-two-pt {
   font-size: 1.22em;
@@ -466,14 +474,37 @@ h5.is-sub-head {
 
 /* call to action */
 
+.control {
+  font-size: 22px;
+}
+
+.columns {
+  background-color: red;
+}
+
+
+
 .call-to-action {
   width: 40%;
-  border: 2px solid purple;
   margin-top: -13%;
-  padding-top: 50px;
+  padding-top: 2%;
+  padding-bottom: 30px;
   margin-left: 14%;
-  z-index: -1;
+/*  z-index: -1;*/
 }
+
+.input {
+  height: 40px;
+  border: 1px solid #afafaf;
+}
+
+.button {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #777576;
+  font-size: 16px;
+}
+
 
 
 @media screen and (min-width: 769px) {
@@ -640,6 +671,18 @@ h5.is-sub-head {
 
 
 }
+
+/*@media screen and (min-width: 769px) {
+.column.is-one-third, .column.is-one-third-tablet {
+    width: 35.5%;
+  }
+}*/
+
+/*@media screen and (min-width: 769px) {
+  .column.is-offset-8, .column.is-offset-8-tablet {
+    margin-left: 65.66667%;
+  }
+}*/
 
 @media screen and (min-width: 768px) {
 
