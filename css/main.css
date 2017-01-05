@@ -335,8 +335,11 @@ li {
   background-color:black;
   width:100%;
   opacity: 0.3;
-  max-height: 600px;
-  min-height: 500px;
+  height: 600px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+/*  max-height: 600px;
+  min-height: 500px;*/
 /*    z-index: 1;
       position: relative;*/
 /*  position:relative;*/
@@ -348,6 +351,8 @@ li {
 	max-width: 2400px;
 /*  background-position:center, top;*/
   background-size: cover;
+    padding-bottom: 0px;
+  padding-top: 0px;
 /*        position: relative;
   z-index: 100;*/
 }
@@ -368,7 +373,7 @@ h1 {
 	font-weight: 900;
 	letter-spacing: 1.9px;
 	text-shadow: 2px 2px #3d3b3b;
-  margin-top: 60px;
+/*  margin-top: 160px;*/
   position: relative;
   z-index: 3;
 
@@ -639,6 +644,7 @@ h5.is-sub-head {
 @media screen and (min-width: 768px) {
 
 
+
 }
 
 
@@ -647,6 +653,16 @@ h5.is-sub-head {
 /***** Mobile Devices - iPad*****/
 
 @media only screen and (max-width: 768px) {
+
+
+
+  .call-to-action {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
 
   .submenu, .dropdown-content  {
@@ -700,9 +716,13 @@ h5.is-sub-head {
     padding-left: 7px;
   }
 
+  .tagline {
+    padding-top: 170px;
+  }
+
   .hide {
   display: none;
-}
+  }
 
   .nav-menu .nav-item {
     border-top: 1px solid rgba(219, 219, 219, 0.5);
