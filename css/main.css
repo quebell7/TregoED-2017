@@ -28,7 +28,7 @@ header {
 }
 
 .container.is-fluid {
-  margin: 0px;
+  margin: 0 auto;
 }
 
 .yellow, .button.is-primary {
@@ -326,7 +326,9 @@ li {
 .hero {
 	margin: 0 auto; 
   width:100%;
-  height: 600px;
+
+    min-height: 650px;
+    max-height: 650px;
   padding-bottom: 0px;
   padding-top: 0px;
   z-index: 0;
@@ -350,20 +352,15 @@ h1 {
 	text-align: center; 
 }
 
-.tagline {
-  z-index: 2;
-}
 
 .title {
 	font-size: 3.575em;
 	font-weight: 900;
 	letter-spacing: 1.9px;
 	text-shadow: 2px 2px #3d3b3b;
-/*  margin-top: 160px;*/
   position: relative;
-  z-index: 3;
-
-
+  padding-bottom: 5px;
+  margin-top: 0px;
 }
 
 @media screen and (min-width: 769px) {
@@ -377,7 +374,7 @@ h1 {
 .subtitle {
   font-weight: 700;
   font-size: 1.688em;
-  line-height: 1.125;
+/*  line-height: 1.125;*/
   margin-top: 18px;
   letter-spacing: .0175em;
   text-align: center;
@@ -394,7 +391,6 @@ h1 {
 .black-square {
   display: flex;
   position: absolute;
-/*  z-index: 4;*/
 }
 
 .box {
@@ -406,14 +402,13 @@ h1 {
     border-radius: 0px;
     margin-right: 5%;
     color: white;
-    padding-top: 30px;
+/*    padding-top: 30px;*/
     padding-bottom: 30px;
     padding-left: 30px;
     padding-right: 5px;
     padding-right: 30px;
     position: relative;
-    margin-top: -120px;
-    z-index: 1;
+    z-index: 4;
 
 }
 
@@ -465,21 +460,24 @@ h5.is-sub-head {
   font-size: 22px;
 }
 
+
+
 .columns {
   background-color: red;
-      padding-right: 24px;
-    padding-left: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-top: -108px;
 }
+
 
 .column {
   padding: 0px;
 }
 
 
-
 .call-to-action {
   width: 40%;
-  margin-top: -13%;
+/*  margin-top: -13%;*/
   padding-top: 2%;
   padding-bottom: 30px;
   margin-left: 14%;
@@ -517,46 +515,6 @@ h5.is-sub-head {
 }
 
 
-
-
-
-
-/* Mobile nav button container */
-/*.mobile-nav-button {
-    margin-top: -28px;
-    margin-right: 15px;
-    float: right;
-    background: #faaf4c;
-    cursor: pointer;
-    height: 29px;
-    display: none; 
-}*/
-
-/* creates a line for the hamburger nav */
-/*.line {
-	height:3px;
-	width:65%;
-	margin:5px auto;
-	border-radius:5px;
-	background: #fff;
-	border: none;
-	transition: .25s transform;*/ /* transitions the transform properties */
-/*}*/
-
-
-/*.line.active.top {
-	background: #faaf4c;
-}*/
-
-.line.active.middle {
-	/* Rotates the line by 45deg */
-    transform: rotate(45deg);	
-}
-
-.line.active.bottom {
-	/* Moves the line up by 11px and rotates it by 45deg */
-	transform: translate(0, -8px) rotate(-45deg);
-}
 
 /* Hide mobile nav in normal view */
 
@@ -601,6 +559,20 @@ h5.is-sub-head {
 @media screen and (max-width: 1050px) {
   .nav-type {
     margin-right: 25px;
+  }
+
+   .hero {
+    max-height: 0px; 
+    min-height: 575px;
+  }
+
+  .tagline {
+    width: 80%;
+    margin: 0, auto;
+  }
+
+  .title {
+  margin-top: -50px;
   }
 
    .dropdown-content {
@@ -703,6 +675,19 @@ h5.is-sub-head {
 
   .is-large {
     padding-top: 0px;
+  }
+
+  .hero {
+    max-height: 0px; 
+    min-height: 500px;
+  }
+
+  .title {
+  margin-top: 0px;
+  }
+
+  .columns {
+  margin-top: -20px;
   }
 
 
