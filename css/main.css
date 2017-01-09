@@ -325,24 +325,23 @@ li {
 
 .hero {
 	margin: 0 auto; 
-}
-
-.hero-body {
-  margin: 0 auto; 
-  background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) );
-/*  background-position: center top;*/
-/*  background-repeat: repeat-x;*/
-  background-color:black;
   width:100%;
-  opacity: 0.3;
   height: 600px;
   padding-bottom: 0px;
   padding-top: 0px;
-/*  max-height: 600px;
-  min-height: 500px;*/
-/*    z-index: 1;
-      position: relative;*/
-/*  position:relative;*/
+}
+
+.hero-body {
+/*  margin: 0 auto;*/ 
+/*  background: linear-gradient( rgba(0, 0, 0, 0.3) );*/
+/*  background-position: center top;*/
+/*  background-repeat: repeat-x;*/
+/*  background-color:black;*/
+/*  width:100%;*/
+/*  opacity: 0.3;*/
+/*  height: 600px;
+  padding-bottom: 0px;
+  padding-top: 0px;*/
 }
 
 
@@ -352,7 +351,7 @@ li {
 /*  background-position:center, top;*/
   background-size: cover;
     padding-bottom: 0px;
-  padding-top: 0px;
+  padding-top: 220px;
 /*        position: relative;
   z-index: 100;*/
 }
@@ -366,6 +365,10 @@ li {
 h1 {
 	font-family: 'Kreon', 'Georgia', serif;
 	text-align: center; 
+}
+
+.tagline {
+  z-index: 3;
 }
 
 .title {
@@ -480,6 +483,12 @@ h5.is-sub-head {
 
 .columns {
   background-color: red;
+      padding-right: 24px;
+    padding-left: 24px;
+}
+
+.column {
+  padding: 0px;
 }
 
 
@@ -571,6 +580,13 @@ h5.is-sub-head {
 
 /***** Smaller Browser Windows *****/
 
+@media screen and (max-width: 1350px) {
+
+  .column {
+  padding: -10px;
+  }
+}
+
 @media screen and (max-width: 1250px) {
   .dropdown-content {
     /* display: none; */
@@ -583,6 +599,10 @@ h5.is-sub-head {
     padding-left: 15px;
 
   }
+
+  .column {
+  padding: -10px;
+}
 }
 
 /*@media screen and (max-width: 1175px) {
@@ -697,6 +717,9 @@ h5.is-sub-head {
 
 @media only screen and (max-width: 768px) {
 
+  .is-large {
+    padding-top: 0px;
+  }
 
 
   .call-to-action {
@@ -760,7 +783,7 @@ h5.is-sub-head {
   }
 
   .tagline {
-    padding-top: 170px;
+    padding-top: 30px;
   }
 
   .hide {
