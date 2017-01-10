@@ -427,20 +427,37 @@ h1 {
   width: 50%;
 }
 
+h2 {
+  font-family: 'Kreon', 'Georgia', serif;
+  text-align: center; 
+  font-weight: 700;
+  font-size: 2.3em;
+  padding-bottom: 15px;
+}
+
+
 h4 {
   font-weight: 300;
   font-size: 2.4em;
 }
 
 h5 {
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 1.125em; 
   color: #e0612b; 
+  text-transform: uppercase;
 }
 
 h5.is-sub-head {
   padding-bottom: 10px;
+}
+
+h6 {
+  font-style: italic;
+  font-weight: 400;
+  color: #212121;
+  font-size: 1.55em;
+  letter-spacing: -.005em;
 }
 
 .black-box-type {
@@ -493,6 +510,34 @@ h5.is-sub-head {
   width: 100%;
   border: 1px solid #777576;
   font-size: 16px;
+}
+
+
+/***** TregoED Workshops *****/
+
+.heading {
+  text-transform: none;
+  border-bottom: 1px solid #e0612b;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.best-for {
+  text-transform: uppercase;
+}
+
+.notification.is-success {
+    background-color: none;
+    color: black;
+}
+
+
+
+
+/***** Colors *****/
+
+.black {
+  color: black;
 }
 
 
