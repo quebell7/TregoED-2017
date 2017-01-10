@@ -339,7 +339,9 @@ li {
 
 }
 
-
+ .tagline {
+  padding-top: 45px;
+  }
 
 
 .is-large {
@@ -378,18 +380,12 @@ h1 {
 .subtitle {
   font-weight: 700;
   font-size: 1.688em;
-/*  line-height: 1.125;*/
   margin-top: 18px;
   letter-spacing: .0175em;
   text-align: center;
 }
 
 /* black square */
-
-
-/*.column.is-offset-8, .column.is-offset-8-tablet {
-  margin-left: 64.66667%;
-}*/
 
 
 .black-square {
@@ -548,6 +544,10 @@ h5.is-sub-head {
     padding-right: 15px;
     padding-left: 15px;
 
+  }
+
+  .tagline {
+    padding-top: 10px;
   }
 
   .column {
