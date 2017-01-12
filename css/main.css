@@ -63,9 +63,6 @@ section {
   background-color: #eeeded;
 }
 
-.orange {
-  color: #e0612b;
-}
 
 i {
   font-weight: 400;
@@ -339,7 +336,7 @@ li {
 
 }
 
- .tagline {
+.tagline {
   padding-top: 45px;
   }
 
@@ -356,18 +353,14 @@ li {
 h1 {
 	font-family: 'Kreon', 'Georgia', serif;
 	text-align: center; 
+  font-weight: 700;
+  font-size: 3.6em;
+  text-shadow: 2px 2px #070707;
+  letter-spacing: .05em;
+  line-height: 1.1em;
+  padding-bottom: 10px;
 }
 
-
-.title {
-	font-size: 3.575em;
-	font-weight: 900;
-	letter-spacing: 1.9px;
-	text-shadow: 2px 2px #3d3b3b;
-  position: relative;
-  padding-bottom: 5px;
-  margin-top: 0px;
-}
 
 @media screen and (min-width: 769px) {
 /*  .hero.is-large .hero-body {
@@ -380,8 +373,9 @@ h1 {
 .subtitle {
   font-weight: 700;
   font-size: 1.688em;
-  margin-top: 18px;
-  letter-spacing: .0175em;
+  margin-top: 3px;
+  letter-spacing: .01em;
+  text-shadow: 1px 1px #292929;
   text-align: center;
 }
 
@@ -520,6 +514,7 @@ h6 {
   border-bottom: 1px solid #e0612b;
   text-align: center;
   padding-bottom: 8px;
+  margin-bottom: 35px;
 }
 
 .best-for {
@@ -531,6 +526,24 @@ h6 {
     color: black;
 }
 
+.title {
+    padding-bottom: 0px;
+}
+
+.content h5 {
+  color: #e0612b;
+  font-weight: 700;
+  font-size: 1.125em;
+  padding-top: 10px;
+}
+
+.content ol {
+     margin-left: 0; 
+}
+
+.title:not(:last-child) {
+    margin-bottom: 0px;
+}
 
 
 
@@ -538,6 +551,10 @@ h6 {
 
 .black {
   color: black;
+}
+
+.orange {
+  color: #e0612b;
 }
 
 
@@ -624,12 +641,9 @@ h6 {
   }
 
   .tagline {
-    width: 80%;
+    width: 90%;
     margin: 0, auto;
-  }
-
-  .title {
-  margin-top: -50px;
+    padding-top: 0px;
   }
 
    .dropdown-content {
@@ -745,6 +759,10 @@ h6 {
   .hero {
     max-height: 0px; 
     min-height: 500px;
+  }
+
+  .hero-title {
+    font-size: 3.4em;
   }
 
   .title {
