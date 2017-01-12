@@ -545,6 +545,23 @@ h6 {
     margin-bottom: 0px;
 }
 
+.image.is-4by3 {
+  background-image: url("../images/DSCN0390.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.orange-square {
+    background-color: #e0612b;
+    height: 355px;
+    margin-top: -355px;
+    margin-left: -40px;
+    width: 65%;
+}
+
+.above {
+  z-index: 2;
+}
 
 
 /***** Colors *****/
@@ -723,6 +740,10 @@ h6 {
     width: 800px;
   }
 
+    .orange-square {
+    display: none;
+  }
+
 
 
 }
@@ -868,6 +889,8 @@ h6 {
 }
 
 @media screen and (max-width: 725px) {
+
+
 
 }
 
