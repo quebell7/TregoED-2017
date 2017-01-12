@@ -495,15 +495,36 @@ h6 {
 }
 
 .input {
-  height: 40px;
+  height: 50px;
   border: 1px solid #afafaf;
 }
 
 .button {
-  height: 40px;
+  height: 50px;
   width: 100%;
   border: 1px solid #777576;
   font-size: 16px;
+}
+
+.button.narrow {
+  width: 50%;
+}
+
+.button.type {
+  font-size: .6em;
+  color: #231f20;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.form-type {
+  font-size: 1em;
+  color: #636363;
+  font-weight: 300;
+}
+
+.demo {
+  text-align: center;
 }
 
 
@@ -884,6 +905,10 @@ h6 {
     margin-top: 0px;
     margin-right: 0px;
     padding-left: 36px;
+  }
+
+  .button.narrow {
+  width: 100%;
   }
 
 }
