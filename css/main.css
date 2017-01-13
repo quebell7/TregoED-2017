@@ -394,6 +394,15 @@ h1 {
 
 .box {
   z-index: 2;
+  background-color: white;
+  border-right: 1px solid #e0612b;
+  padding: 0px;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.box.border{
+  border: none;
 }
 
 .notification {
@@ -529,7 +538,7 @@ h6 {
   font-weight: 300;
 }
 
-.demo {
+.center {
   text-align: center;
 }
 
@@ -589,6 +598,14 @@ h6 {
 
 .above {
   z-index: 2;
+}
+
+
+/***** TregoED Consulting *****/
+
+.consulting-graphics {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
