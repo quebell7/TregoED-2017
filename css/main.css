@@ -45,7 +45,10 @@ p {
 
 .grey {
   background-color: #f5f5f5;
-  margin-top: -180px;
+}
+
+.negative-margin {
+    margin-top: -180px;
 }
 
 .yellow-type {
@@ -485,19 +488,15 @@ h6 {
   font-size: 22px;
 }
 
-
-
 .columns {
   padding-right: 24px;
   padding-left: 24px;
   margin-top: -108px;
 }
 
-
 .column {
   padding: 0px;
 }
-
 
 .call-to-action {
     width: 60%;
@@ -522,7 +521,7 @@ h6 {
 }
 
 .button.narrow {
-  width: 50%;
+  width: 20%;
 }
 
 .button.type {
@@ -600,13 +599,35 @@ h6 {
   z-index: 2;
 }
 
+.workshop-button {
+  width: 55%;
+  margin: 0 auto;
+}
+
 
 /***** TregoED Consulting *****/
 
 .consulting-graphics {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 24px;
+  padding-bottom: 34px;
 }
+
+.half-size img {
+  width: 40%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.is-negative-margin {
+  margin-top: -35px;
+}
+
+.narrow {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.is-
 
 
 /***** Colors *****/
