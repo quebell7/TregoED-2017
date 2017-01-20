@@ -88,6 +88,22 @@ li {
   color: #b2b1b1;
 }
 
+.footer a:not(.icon), .footer a:visited:not(.icon) {
+    border-bottom: none;
+}
+
+/*.icon:last-child, .icon:first-child {
+  margin-left: 0px;
+  margin-right: 0px;
+}*/
+
+
+
+.tabs a, li.is-active {
+    border-bottom-color: none;
+    color: none;
+}
+
 
 
 
@@ -100,6 +116,10 @@ li {
 
 .nav-item img {
   max-height: 63px;
+}
+
+.nav-item-footer {
+  margin-top: 10px;
 }
 
 .tregoed-padding {
@@ -476,7 +496,7 @@ h6 {
   font-family: "Kreon", serif;
   font-weight: 400;
   font-size: 1.15em;
-  color: #c2c2c2;
+/*  color: #c2c2c2;*/
   letter-spacing: .5px;
   margin-left: 20px;
 }
@@ -491,6 +511,9 @@ h6 {
 .columns {
   padding-right: 24px;
   padding-left: 24px;
+}
+
+.is-benefit-box {
   margin-top: -108px;
 }
 
@@ -600,7 +623,7 @@ h6 {
 }
 
 .workshop-button {
-  width: 55%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -627,7 +650,43 @@ h6 {
   padding-right: 24px;
 }
 
-.is-
+
+
+/***** Discuss & Share *****/
+
+.ds-type {
+  font-size: 0.85em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.is-inline {
+    display: flex;
+    justify-content: left;
+}
+
+.sm-article-type {
+  font-family: 'Kreon', 'Georgia', serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  padding-bottom: 15px;
+  color: black;
+  letter-spacing: 0.03em;
+  padding-top: 5px;
+}
+
+.sm-article-type:after {
+        content: "";
+    display: inline;
+    background: url(../images/chevron.png) center center no-repeat;
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-top: -9px;
+    margin-right: -4px;
+}
+
+
 
 
 /***** Colors *****/
@@ -638,6 +697,10 @@ h6 {
 
 .orange {
   color: #e0612b;
+}
+
+.dark-grey {
+  color: #7a7a7a;
 }
 
 
@@ -659,8 +722,32 @@ h6 {
 }
 
 
+/***** Footer *****/
 
-/* Hide mobile nav in normal view */
+.footer-padding {
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+.is-inline {
+  display: flex;
+}
+
+ .is-brand-footer {
+    width: 70%;
+/*    min-width: 125px;*/
+  }
+
+.is-small {
+    font-size: 18px;
+    padding-top: 3.5px;
+}
+
+.circle-footer {
+    min-height: 30px;
+    padding-left: 7px;
+}
+
 
 
 
@@ -704,12 +791,6 @@ h6 {
   }
 }
 
-/*@media screen and (max-width: 1175px) {
-    .call-to-action {
-    margin-top: -202px;
-  }
-
-}*/
 
 
 
@@ -856,12 +937,16 @@ h6 {
   margin-top: 0px;
   }
 
+  .is-benefit-box {
+    margin-top: 0px;
+  }
+
   .columns {
     margin-top: 0px;
     margin-bottom: -15px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
   }
 
   .columns:last-child {
