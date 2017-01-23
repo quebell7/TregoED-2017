@@ -89,7 +89,7 @@ li {
 }
 
 .footer a:not(.icon), .footer a:visited:not(.icon) {
-    border-bottom: none;
+    border-bottom: none;  
 }
 
 /*.icon:last-child, .icon:first-child {
@@ -102,6 +102,7 @@ li {
 .tabs a, li.is-active {
     border-bottom-color: none;
     color: none;
+    padding-bottom: 10px;
 }
 
 
@@ -116,10 +117,6 @@ li {
 
 .nav-item img {
   max-height: 63px;
-}
-
-.nav-item-footer {
-  margin-top: 10px;
 }
 
 .tregoed-padding {
@@ -417,15 +414,17 @@ h1 {
 
 .box {
   z-index: 2;
-  background-color: white;
+  background-color: none;
   border-right: 1px solid #e0612b;
   padding: 0px;
   border-radius: 0px;
   box-shadow: none;
+  display: block;
 }
 
 .box.border{
   border: none;
+  background-color: none;
 }
 
 .notification {
@@ -552,6 +551,11 @@ h6 {
   color: #231f20;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.button.newsletter {
+  background-color: #959595;
+
 }
 
 .form-type {
@@ -686,6 +690,10 @@ h6 {
     margin-right: -4px;
 }
 
+.is-inline {
+  display: flex;
+}
+
 
 
 
@@ -724,28 +732,105 @@ h6 {
 
 /***** Footer *****/
 
+footer {
+    border-top: 3px solid #ffde00;
+}
+
+.tabs {
+  overflow: visible;
+  overflow-x: visible;
+  white-space: normal;
+}
+
+.box {
+  background: none;
+}
+
 .footer-padding {
     padding-right: 14px;
     padding-left: 14px;
 }
 
-.is-inline {
-  display: flex;
+
+.is-brand-footer {
+    width: 70%;
+    min-width: 140px;
 }
 
- .is-brand-footer {
-    width: 70%;
-/*    min-width: 125px;*/
-  }
 
 .is-small {
-    font-size: 18px;
-    padding-top: 3.5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.nav-item-footer {
+  padding-left: 130px;
 }
 
 .circle-footer {
-    min-height: 30px;
-    padding-left: 7px;
+    border-radius: 50%;
+    min-width: 30px;
+    border: 3px solid #ffde00;
+}
+
+.vert-center {
+  margin-top: 4px;
+}
+
+.small-field {
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dark-grey-bck {
+  background-color: #e2e2e2;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  height: 180px;
+}
+
+.form-type-footer {
+  font-size: .8em;
+  color: #636363;
+  font-weight: 300;
+}
+
+.ital-newsletter {
+  color: #6d6d6d;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.22em;
+  padding-top: 18px;
+}
+
+.sign-up {
+  margin-top: -20px;
+}
+
+.is-in-newsletter {
+  background-color: #959595;
+}
+
+.is-wide {
+  width: 100%;
+}
+
+.is-footer-type {
+  font-weight: 700;
+  color: #6d6d6d;
+  font-size: 1rem;
+}
+
+.top-row {
+      padding-top: 74px;
+}
+
+.is-sign-up-box {
+  margin-right: 90px;
 }
 
 
