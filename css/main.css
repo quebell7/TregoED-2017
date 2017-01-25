@@ -47,6 +47,7 @@ p {
   background-color: #f5f5f5;
 }
 
+
 .negative-margin {
     margin-top: -180px;
 }
@@ -110,6 +111,10 @@ li {
 
 /***** Header & Nav *****/
 
+
+.is-brand {
+    min-width: 125px;
+}
 
 .nav{
 	min-height: 55px
@@ -226,6 +231,13 @@ li {
   font-size: 2.75em;
   font-weight: 300;
 }
+
+.nav-left {
+  overflow: visible;
+  overflow-x: visible;
+  white-space: normal;
+}
+
 
 /***** Header & Nav *****/
 
@@ -766,6 +778,11 @@ footer {
 
 .nav-item-footer {
   padding-left: 130px;
+  padding-top: 16px;
+}
+
+.top-padding {
+  padding-top: 16px;
 }
 
 .circle-footer {
@@ -790,7 +807,7 @@ footer {
   padding-right: 24px;
   padding-top: 5px;
   padding-bottom: 15px;
-  height: 180px;
+  height: 160px;
 }
 
 .form-type-footer {
@@ -832,6 +849,28 @@ footer {
 .is-sign-up-box {
   margin-right: 90px;
 }
+
+.not-in-mobile {
+  display: block;
+}
+
+.has-negative-margin {
+  margin-right: 0px;
+
+}
+
+.copyright {
+  font-size: .77em;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 24px;
+  margin-top: 50px;
+  border-top: 1px solid #eeedee;
+}
+}
+
+
 
 
 
@@ -935,9 +974,28 @@ footer {
     width: 900px;
   }
 
+  .nav-item-footer {
+    padding-left: 30px;
+  }
+
+  .is-sign-up-box {
+    margin-right: 44px;
+  }
+
+  .tile.is-6 {
+    width: 31%;
+  }
+
+
+
 }
 
 @media screen and (max-width: 900px) {
+
+.is-brand {
+  width: 80%;
+  margin-left: -110px;
+}
   .nav-type {
       font-size: 14px;
   }
@@ -976,24 +1034,9 @@ footer {
     display: none;
   }
 
-
-
-}
-
-/*@media screen and (min-width: 769px) {
-.column.is-one-third, .column.is-one-third-tablet {
-    width: 35.5%;
+   .not-in-mobile {
+  display: none;
   }
-}*/
-
-/*@media screen and (min-width: 769px) {
-  .column.is-offset-8, .column.is-offset-8-tablet {
-    margin-left: 65.66667%;
-  }
-}*/
-
-@media screen and (min-width: 768px) {
-
 
 
 }
@@ -1003,9 +1046,33 @@ footer {
 
 /***** Mobile Devices - iPad*****/
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width : 768px) {
+
+  .footer {
+      padding: 0px 20px 50px;
+  }
+
+  .is-brand {
+  max-width: 35%;
+  margin-left: 0px;
+  }
+
+  .negative-margin {
+    margin-top: 0px;
+  }
 
   .is-large {
+    padding-top: 0px;
+  }
+
+   .box {
+    border-right: none;
+    border-bottom: 1px solid #e0612b;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  .consulting-graphics {
     padding-top: 0px;
   }
 
@@ -1035,7 +1102,7 @@ footer {
   }
 
   .columns:last-child {
-        margin-bottom: -15px;
+    margin-bottom: -15px;
   }
 
 
@@ -1046,9 +1113,6 @@ footer {
     padding-left: 30px;
     padding-right: 30px;
   }
-
-
-
 
   .submenu, .dropdown-content  {
     display: none;
@@ -1078,7 +1142,7 @@ footer {
 
   .nav-type {
     margin-right: 0;
-}
+  }
 
   .nav {
     min-height: 42px;
@@ -1126,36 +1190,133 @@ footer {
   width: 100%;
   }
 
+  .is-sign-up-box {
+    margin-right: 0px;
+  }
+
+  .nav-item-footer {
+    padding-left: 300px;
+  }
+
+  .not-in-mobile {
+  display: none;
+  }
+
+  .workshop-button {
+    width: 100%;
+  }
+
 }
 
-@media screen and (max-width: 725px) {
+/***** iPhone 6+ Devices *****/
 
-.grey {
-  margin-top: 0px;
+@media screen and (max-width : 414px)  {
+
+  .not-in-mobile {
+  display: none;
+  }
+
+  .grey {
+    margin-top: 0px;
+  }
+
+  .nav-item-footer {
+    padding-left: 33px;
+  }
+
+    .dark-grey-bck {
+    height: 175px;
+  }
+
+    .is-brand-footer {
+    min-width: 120px;
+  }
+
+  .top-padding {
+    min-width: 52px;
+  }
+
 }
-
-}
-
-
-/***** iPhone Devices *****/
-
-
-@media only screen and (max-width: 650px) {
-	
-
-}
-
 
 /***** iPhone 6  *****/
 
-@media only screen and (max-width: 375px) {
+@media screen and (max-width : 375px) {
+
+
+    .has-negative-margin {
+    margin-right: -15px;
+    }
+
+}
+
+
+/***** iPhone 5  *****/
+
+@media screen and (max-width : 320px) {
+
+
+    .dark-grey-bck {
+    height: 225px;
+    }
+
+    .nav-item-footer {
+    padding-left: 0px;
+    }
+
+
+    .has-negative-margin {
+    margin-right: -20px;
+    }
 
 
 }
 
+
+/***** iPhone 6 Devices *****/
+
+/*@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+     .not-in-mobile {
+    display: none;
+    }
+
+    .is-brand-footer {
+    min-width: 110px;
+    }
+
+    .nav-item-footer {
+    padding-left: 0px;
+    padding-top: 10px;
+    }
+
+    .top-padding {
+      padding-top: 10px;
+    }
+
+  .dark-grey-bck {
+    height: 175px;
+    margin-right: -49px;
+  }
+
+}*/
+
+
 /***** iPhone 5  *****/
 
-@media only screen and (max-width: 490px) {
+/*@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+     .not-in-mobile {
+    display: none;
+    }
+
+    .dark-grey-bck {
+    height: 225px;
+    margin-right: -49px;
+  }
+
+}*/
+
+/*@media only screen and (min-width: 320px) {
   .nav {
     min-height: 37px;
   }
@@ -1173,7 +1334,7 @@ footer {
   height: 28px;
   width: 28px;
   line-height: 24px;
-}
+  }
 
   .is-brand {
     width: 60%;
@@ -1182,7 +1343,22 @@ footer {
 
   a.nav-item {
     padding: 6px;
-  }
-}
+  }*/
+
+/*   .nav-item-footer {
+    padding-left: 0px;
+  }*/
+
+/*  li.is-active {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 56px;
+    margin-right: -21px;
+  }*/
+
+/*  .dark-grey-bck {
+    height: 224px;
+  }*/
+/*}*/
 
 
