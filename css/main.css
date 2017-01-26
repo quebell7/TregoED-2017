@@ -759,6 +759,7 @@ h6 {
   margin-right: 10px;
   background: #8C8;
   counter-increment: gallery-cell;
+  background-color: white;
 }
 
 /* cell number */
@@ -773,17 +774,10 @@ h6 {
 
 .flickity-page-dots {
     height: 36px;
-    /* position: absolute; */
     margin-bottom: 526px;
     width: 100%;
     float: right;
-    /* bottom: -25px; */
-    /* padding: 0; */
-   /* margin-top: 500px;*/
-    /* list-style: none; */
-     text-align: right; 
-     float: right;
-    /* line-height: 1; */
+    text-align: right; 
   }
 
 .flickity-prev-next-button {
@@ -832,28 +826,6 @@ h6 {
 }
 
 
-
-#item3 {
-  background: url("../images/sample3.jpg") center center no-repeat;
-}
-
-
-#item5 {
-  background: url("../images/sample5.jpg") center center no-repeat;
-}
-
-#item6 {
-  background: url("../images/sample6.jpg") center center no-repeat;
-}
-
-
-#item8 {
-  background: url("../images/sample8.jpg") center center no-repeat;
-}
-
-#item9 {
-  background: url("../images/iStock_91765653_XLARGE.jpg") center center no-repeat;
-}
 
 
 
@@ -1001,6 +973,13 @@ footer {
   .call-to-action {
     margin-top: -13.6%;
   }
+
+  .orange-square-testamonial {
+  height: 410px;
+  margin-top: -400px;
+  margin-left: 25px;
+  max-height: 435px;
+  }
 }
 
 
@@ -1028,8 +1007,31 @@ footer {
   .call-to-action {
     margin-top: -20.6%;
   }
+
+  .orange-square-testamonial {
+    height: 398px;
+    margin-top: -394px;
+    margin-left: 25px;
+    max-height: 435px;
+  }
+
+   .carousel {
+    padding-bottom: 0px;
+  }
+
 }
 
+@media screen and (max-width: 1150px) {
+  
+
+  .orange-square-testamonial {
+    height: 375px;
+    margin-top: -375px;
+    margin-left: 25px;
+    max-height: 435px;
+  }
+
+}
 
 
 
@@ -1101,9 +1103,38 @@ footer {
     width: 31%;
   }
 
+    .orange-square-testamonial {
+    height: 330px;
+    margin-top: -330px;
+    margin-left: 25px;
+    max-height: 330px;
+  }
 
+  .quote {
+    padding-top: 65px;
+  }
+
+    .carousel {
+    padding-bottom: 0px;
+  }
+
+  .gallery-cell {
+  height: 375px;
+  }
+
+  .flickity-page-dots {
+    margin-bottom: 398px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+
+    .orange-square-testamonial {
+    height: 290px;
+    }
 
 }
+
 
 @media screen and (max-width: 900px) {
 
@@ -1151,6 +1182,16 @@ footer {
 
    .not-in-mobile {
   display: none;
+  }
+
+    .quote {
+    padding-top: 45px;
+  }
+
+    .orange-square-testamonial {
+    margin-top: -375px;
+    height: 270px;
+    width: 22%;
   }
 
 
@@ -1321,6 +1362,38 @@ footer {
     width: 100%;
   }
 
+    .orange-square-testamonial {
+    display: none;
+  }
+
+  .testamonial-photo {
+    width: 35%;
+  }
+
+  .rule {
+    width: 70%;
+  }
+
+  .quote {
+    width: 58%;
+    float: right;
+    margin-top: -400px;
+    margin-right: 12px;
+  }
+
+  .quote-title {
+    width: 60%;
+    float: right;
+    margin-top: -65px;
+  }
+
+  .district-title {
+    width: 60%;
+    float: right;
+    margin-top: -40px;
+  }
+
+
 }
 
 /***** iPhone 6+ Devices *****/
@@ -1349,6 +1422,42 @@ footer {
 
   .top-padding {
     min-width: 52px;
+  }
+
+    .testamonial-photo {
+    width: 100%;
+    padding-top: 24px;
+  }
+
+  .rule {
+    width: 100%;
+  }
+
+  .quote {
+    width: 100%;
+    margin-top: -52px;
+    margin-right: -6px;
+  }
+
+  .quote-title {
+    width: 100%;
+    float: right;
+    margin-top: 15px;
+  }
+
+  .district-title {
+    width: 100%;
+    float: right;
+    margin-top: 4px;
+  }
+
+    .gallery-cell {
+  height: 975px;
+  }
+
+  .flickity-page-dots {
+    margin-bottom: 976px;
+    text-align: center;
   }
 
 }
