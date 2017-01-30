@@ -9,7 +9,6 @@ var heroImages = [
   'https://quebell7.github.io/TregoED-2017/images/sewanhaka3.jpg',
   'https://quebell7.github.io/TregoED-2017/images/sewanhaka4.jpg',
   'https://quebell7.github.io/TregoED-2017/images/sewanhaka6.jpg',
-  'https://quebell7.github.io/TregoED-2017/images/sewanhaka13.jpg',
   'https://quebell7.github.io/TregoED-2017/images/sewanhaka14.jpg',
   'https://quebell7.github.io/TregoED-2017/images/sewanhaka15.jpg',
   'https://quebell7.github.io/TregoED-2017/images/sewanhaka16.jpg',
